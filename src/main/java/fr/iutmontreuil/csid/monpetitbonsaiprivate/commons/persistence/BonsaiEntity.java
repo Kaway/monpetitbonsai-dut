@@ -15,9 +15,6 @@ public class BonsaiEntity {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private UUID id;
 
-    @OneToMany(targetEntity = CareEventEntity.class, mappedBy = "id.bonsaiId")
-    private List<CareEventEntity> careEvents;
-
     public BonsaiEntity() {
     }
 
